@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <title>Frontend Mentor | Frontend quiz app</title>
-    <link rel="stylesheet" href="/scss/main.scss" />
-  </head>
 
-  <body>
-    <!-- Quiz menu start -->
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Frontend quiz app</title>
+  <link rel="stylesheet" href="/scss/main.scss" />
+</head>
 
-    Welcome to the Frontend Quiz! Pick a subject to get started. HTML CSS
-    JavaScript Accessibility
+<body>
+  <header>
+    <div class="container__toggle">
+      <img class="toggle__image--sun" src="/assets/images/icon-sun-dark.svg" alt="sun icon with light background">
+      <label class="switch">
+        <input type="checkbox" name="" id="">
+        <span class="slider round"></span>
+      </label>
+      <img class="toggle__image--moon | margin-inline-end-32" src="/assets/images/icon-moon-dark.svg"
+        alt="moon icon with light background">
+      <span class="toggle | font-body__S--Reg" data-toggle="light">Toggle on Light</span>
+    </div>
+  </header>
+  <main></main>
+  <button class="button" data-type="normal">button idle</button>
+  <!-- Quiz menu start -->
 
-    <!-- Quiz menu end -->
+  Welcome to the Frontend Quiz! Pick a subject to get started. HTML CSS
+  JavaScript Accessibility
 
-    <!-- Quiz question start -->
+  <!-- Quiz menu end -->
 
-    Question
-    <!-- number -->
-    of 10 A B C D Submit answer
+  <!-- Quiz question start -->
 
-    <!-- Quiz question end -->
+  Question
+  <!-- number -->
+  of 10 A B C D Submit answer
 
-    <!-- Quiz completed start -->
+  <!-- Quiz question end -->
 
-    Quiz completed You scored...
+  <!-- Quiz completed start -->
 
-    <!-- score -->
-    out of 10
+  Quiz completed You scored...
 
-    <!-- Quiz completed end -->
-    <script type="module" src="/main.js"></script>
-  </body>
+  <!-- score -->
+  out of 10
+
+  <!-- Quiz completed end -->
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

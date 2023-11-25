@@ -1,17 +1,18 @@
-$ff-sans: "Lato", sans-serif;
+$ff-sans: "Rubik", sans-serif;
 $ff-serif: "Abril Fatface", serif;
 
 $ff-base: $ff-sans;
 $ff-accent: $ff-serif;
 
 $font-sizes: (
-  900: clamp(2.5rem, 0.5rem + 10vw, 5rem),
-  800: clamp(2.5rem, 0.5rem + 7vw, 3.75rem),
-  600: clamp(1.5rem, 0.5rem + 3vw, 1.6875rem),
-  500: 1.3125rem,
-  400: 1.125rem,
-  300: 1rem,
+  900: 9rem,
+  800: 4rem,
+  600: 2.25rem,
+  500: 1.75rem,
+  400: 1rem,
+  200: 0.75rem,
 );
 
 $fw-400: 400;
-$fw-700: 700;
+$fw-400_ita: italic;
+$fw-500: 500;

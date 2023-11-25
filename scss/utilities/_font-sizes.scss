@@ -8,3 +8,51 @@
     }
   }
 }
+
+.font-heading {
+  text-align: left;
+  &__XL {
+    font-size: fs(900);
+    font-weight: $fw-500;
+    line-height: $lh-100;
+  }
+  &__L {
+    font-size: fs(800);
+    font-weight: $fw-400;
+    line-height: $lh-100;
+  }
+  &__L--Bold {
+    font-size: fs(800);
+    font-weight: $fw-500;
+    line-height: $lh-100;
+  }
+  &__M {
+    font-size: fs(600);
+    font-weight: $fw-500;
+    line-height: $lh-100;
+  }
+  &__S {
+    font-size: fs(500);
+    font-weight: $fw-500;
+    line-height: $lh-100;
+  }
+}
+
+.font-body {
+  &__M-Reg {
+    font-size: fs(200);
+    font-weight: $fw-400;
+    line-height: $lh-150;
+  }
+  &__S--Reg__Italic {
+    font-size: fs(200);
+    font-weight: $fw-400;
+    font-style: $fw-400_ita;
+    line-height: $lh-150;
+  }
+  &__S--Reg {
+    font-size: fs(400);
+    font-weight: $fw-400;
+    line-height: $lh-150;
+  }
+}
