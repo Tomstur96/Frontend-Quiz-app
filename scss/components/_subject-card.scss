@@ -1,0 +1,40 @@
+@use "../abstracts/" as *;
+
+.subject {
+  background-color: clr(neutral, 100);
+  padding-block: size(20);
+  border-radius: size(24);
+  border: 0;
+
+  &:is(:hover, :focus) {
+    cursor: pointer;
+    &:first-of-type {
+      --outline-size: 3px;
+      outline: var(--outline-size) solid clr(primary, 200);
+      outline-offset: calc(var(--outline-size) * -1);
+    }
+    &:nth-child(2) {
+      --outline-size: 3px;
+      outline: var(--outline-size) solid clr(primary, 100);
+      outline-offset: calc(var(--outline-size) * -1);
+    }
+    &:nth-child(3) {
+      --outline-size: 3px;
+      outline: var(--outline-size) solid clr(primary, 700);
+      outline-offset: calc(var(--outline-size) * -1);
+    }
+    &:nth-child(4) {
+      --outline-size: 3px;
+      outline: var(--outline-size) solid clr(primary, 800);
+      outline-offset: calc(var(--outline-size) * -1);
+    }
+  }
+
+  &__icon {
+    margin-inline: size(20);
+    aspect-ratio: 2 / 2;
+    object-fit: contain;
+    border-radius: size(8);
+    padding: size(8);
+  }
+}

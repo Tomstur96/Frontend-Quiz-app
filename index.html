@@ -14,8 +14,10 @@
 </head>
 
 <body>
-  <header>
-    <div class="container__toggle">
+  <img class="bg--image" src="/assets/images/pattern-background-desktop-light.svg" alt="">
+
+  <main>
+    <div class="container__toggle | margin-block-end-99">
       <img class="toggle__image--sun" src="/assets/images/icon-sun-dark.svg" alt="sun icon with light background">
       <label class="switch">
         <input type="checkbox" name="" id="">
@@ -25,32 +27,33 @@
         alt="moon icon with light background">
       <span class="toggle | font-body__S--Reg" data-toggle="light">Toggle on Light</span>
     </div>
-  </header>
-  <main></main>
-  <button class="button" data-type="normal">button idle</button>
-  <!-- Quiz menu start -->
+    <div class="flex-group justify-center flex-start">
+      <div class="container__info">
+        <h1 class="font-heading__L clr-neutral-800">Welcome to the <span
+            class="font-heading__L--Bold clr-neutral-800">Frontend Quiz</span></h1>
+        <span class="font-body__S--Reg__Italic clr-neutral-600">Pick a subject to get started.</span>
+      </div>
+      <div class="flex-group flex-col gap-24 container__options">
+        <div class="subject | flex-group flex-center gap-32" id="HTML">
+          <img class="subject__icon | bg-primary-200" src="/assets/images/icon-html.svg" alt="HTML icon">
+          <span class="subject__des | font-heading__S clr-neutral-800">HTML</span>
+        </div>
+        <div class="subject | flex-group flex-center gap-32" id="CSS">
+          <img class="subject__icon | bg-primary-100" src="/assets/images/icon-css.svg" alt="HTML icon">
+          <span class="subject__des | font-heading__S clr-neutral-800">CSS</span>
+        </div>
+        <div class="subject | flex-group flex-center gap-32" id="Javascript">
+          <img class="subject__icon | bg-primary-700" src="/assets/images/icon-js.svg" alt="HTML icon">
+          <span class="subject__des | font-heading__S clr-neutral-800">JavaScript</span>
+        </div>
+        <div class="subject | flex-group flex-center gap-32" id="Accessibility">
+          <img class="subject__icon | bg-primary-800" src="/assets/images/icon-accessibility.svg" alt="HTML icon">
+          <span class="subject__des | font-heading__S clr-neutral-800">Accessibility</span>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  Welcome to the Frontend Quiz! Pick a subject to get started. HTML CSS
-  JavaScript Accessibility
-
-  <!-- Quiz menu end -->
-
-  <!-- Quiz question start -->
-
-  Question
-  <!-- number -->
-  of 10 A B C D Submit answer
-
-  <!-- Quiz question end -->
-
-  <!-- Quiz completed start -->
-
-  Quiz completed You scored...
-
-  <!-- score -->
-  out of 10
-
-  <!-- Quiz completed end -->
   <script type="module" src="/main.js"></script>
 </body>
 

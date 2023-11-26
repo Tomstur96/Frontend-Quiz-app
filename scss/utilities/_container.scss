@@ -13,8 +13,24 @@
 // }
 
 .container {
+  &__header {
+    margin-inline-end: 0;
+    margin-inline-start: auto;
+  }
+
   &__toggle {
     display: flex;
     gap: size(16);
+    justify-content: flex-end;
+  }
+
+  &__info {
+    max-width: 50%;
+    width: 50%;
+  }
+
+  &__options {
+    max-width: 50%;
+    width: 50%;
   }
 }

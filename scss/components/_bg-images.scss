@@ -1,0 +1,8 @@
+@use "../abstracts" as *;
+
+.bg--image {
+  position: absolute;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: -2;
+}
