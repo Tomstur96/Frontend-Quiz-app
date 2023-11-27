@@ -1,0 +1,31 @@
+@use "../abstracts/" as *;
+@use "../utilities" as *;
+
+.quizArea {
+  &__heading {
+    margin-block-end: size(48);
+    @extend .font-heading__L;
+    &--Bold {
+      @extend .font-heading__L--Bold;
+    }
+  }
+
+  &__subline {
+    @extend .font-body__M-Reg__Italic;
+  }
+
+  @include mq(small, $type: max) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @include mq(medium, large, $type: between) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+  }
+}

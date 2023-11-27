@@ -4,9 +4,10 @@ $sizes: (
   16: 1rem,
   20: 1.25rem,
   24: 1.5rem,
+  26: 1.625rem,
   32: 2rem,
   36: 2.25rem,
-  48: 3rem,
+  48: 3em,
   99: 6.1875rem,
 );
 
@@ -25,3 +26,6 @@ $container-max-width-wide: 75rem;
 $lh-100: 100%;
 $lh-110: 110%;
 $lh-150: 150%;
+
+$content-max-width: 70ch;
+$breakout-max-width: 85ch;

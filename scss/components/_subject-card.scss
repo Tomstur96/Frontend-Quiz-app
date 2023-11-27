@@ -4,7 +4,14 @@
   background-color: clr(neutral, 100);
   padding-block: size(20);
   border-radius: size(24);
-  border: 0;
+  // border: 0;
+  outline: 3px solid transparent;
+  transition: 0.5s;
+  gap: size(32);
+
+  @include mq(small, $type: max) {
+    gap: size(16);
+  }
 
   &:is(:hover, :focus) {
     cursor: pointer;

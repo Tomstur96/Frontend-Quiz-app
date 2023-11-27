@@ -44,6 +44,14 @@
     font-weight: $fw-400;
     line-height: $lh-150;
   }
+
+  &__M-Reg__Italic {
+    font-size: fs(500);
+    font-weight: $fw-400;
+    font-style: $fw-400_ita;
+    line-height: $lh-150;
+  }
+
   &__S--Reg__Italic {
     font-size: fs(200);
     font-weight: $fw-400;

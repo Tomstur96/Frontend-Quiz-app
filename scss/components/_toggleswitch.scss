@@ -1,5 +1,12 @@
 @use "../abstracts" as *;
+@use "../utilities" as *;
 
+.toggle {
+  @extend .font-body__S--Reg;
+  @include mq(small, $type: max) {
+    display: none;
+  }
+}
 .switch {
   position: relative;
   display: inline-block;

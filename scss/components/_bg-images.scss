@@ -2,7 +2,8 @@
 
 .bg--image {
   position: absolute;
-  background-repeat: no-repeat;
-  overflow: hidden;
   z-index: -2;
+  background-size: cover;
+  width: 100%;
+  top: 0;
 }

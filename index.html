@@ -1,60 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Frontend quiz app</title>
+    <link rel="stylesheet" href="/scss/main.scss" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Frontend quiz app</title>
-  <link rel="stylesheet" href="/scss/main.scss" />
-</head>
+  <body>
+    <picture>
+      <source
+        media="(max-width: 45em)"
+        srcset="/assets/images/pattern-background-tablet-light.png"
+      />
+      <source
+        media="(max-width: 30em)"
+        srcset="/assets/images/pattern-background-mobile-light.png"
+      />
+      <img
+        class="bg--image"
+        src="/assets/images/pattern-background-desktop-light.png"
+        alt=""
+      />
+    </picture>
 
-<body>
-  <img class="bg--image" src="/assets/images/pattern-background-desktop-light.svg" alt="">
+    <!-- <div class="bg--image"></div> -->
 
-  <main>
-    <div class="container__toggle | margin-block-end-99">
-      <img class="toggle__image--sun" src="/assets/images/icon-sun-dark.svg" alt="sun icon with light background">
-      <label class="switch">
-        <input type="checkbox" name="" id="">
-        <span class="slider round"></span>
-      </label>
-      <img class="toggle__image--moon | margin-inline-end-32" src="/assets/images/icon-moon-dark.svg"
-        alt="moon icon with light background">
-      <span class="toggle | font-body__S--Reg" data-toggle="light">Toggle on Light</span>
-    </div>
-    <div class="flex-group justify-center flex-start">
-      <div class="container__info">
-        <h1 class="font-heading__L clr-neutral-800">Welcome to the <span
-            class="font-heading__L--Bold clr-neutral-800">Frontend Quiz</span></h1>
-        <span class="font-body__S--Reg__Italic clr-neutral-600">Pick a subject to get started.</span>
+    <main>
+      <div class="container__toggle | margin-block-end-99">
+        <img
+          class="toggle__image--sun"
+          src="/assets/images/icon-sun-dark.svg"
+          alt="sun icon with light background"
+        />
+        <label class="switch">
+          <input type="checkbox" name="" id="" />
+          <span class="slider round"></span>
+        </label>
+        <img
+          class="toggle__image--moon | margin-inline-end-32"
+          src="/assets/images/icon-moon-dark.svg"
+          alt="moon icon with light background"
+        />
+        <span class="toggle |" data-toggle="light">Toggle on Light</span>
       </div>
-      <div class="flex-group flex-col gap-24 container__options">
-        <div class="subject | flex-group flex-center gap-32" id="HTML">
-          <img class="subject__icon | bg-primary-200" src="/assets/images/icon-html.svg" alt="HTML icon">
-          <span class="subject__des | font-heading__S clr-neutral-800">HTML</span>
+      <div class="quizArea | flex-group justify-center flex-start">
+        <div class="container__info">
+          <h1 class="quizArea__heading | clr-neutral-800">
+            Welcome to the
+            <span class="quizArea__heading--Bold | clr-neutral-800"
+              >Frontend Quiz</span
+            >
+          </h1>
+          <span class="quizArea__subline | clr-neutral-600"
+            >Pick a subject to get started.</span
+          >
         </div>
-        <div class="subject | flex-group flex-center gap-32" id="CSS">
-          <img class="subject__icon | bg-primary-100" src="/assets/images/icon-css.svg" alt="HTML icon">
-          <span class="subject__des | font-heading__S clr-neutral-800">CSS</span>
-        </div>
-        <div class="subject | flex-group flex-center gap-32" id="Javascript">
-          <img class="subject__icon | bg-primary-700" src="/assets/images/icon-js.svg" alt="HTML icon">
-          <span class="subject__des | font-heading__S clr-neutral-800">JavaScript</span>
-        </div>
-        <div class="subject | flex-group flex-center gap-32" id="Accessibility">
-          <img class="subject__icon | bg-primary-800" src="/assets/images/icon-accessibility.svg" alt="HTML icon">
-          <span class="subject__des | font-heading__S clr-neutral-800">Accessibility</span>
+        <div class="flex-group flex-col gap-24 container__options">
+          <div class="subject | flex-group flex-center" id="HTML">
+            <img
+              class="subject__icon | bg-primary-200"
+              src="/assets/images/icon-html.svg"
+              alt="HTML icon"
+            />
+            <span class="subject__des | font-heading__S clr-neutral-800"
+              >HTML</span
+            >
+          </div>
+          <div class="subject | flex-group flex-center" id="CSS">
+            <img
+              class="subject__icon | bg-primary-100"
+              src="/assets/images/icon-css.svg"
+              alt="HTML icon"
+            />
+            <span class="subject__des | font-heading__S clr-neutral-800"
+              >CSS</span
+            >
+          </div>
+          <div class="subject | flex-group flex-center" id="Javascript">
+            <img
+              class="subject__icon | bg-primary-700"
+              src="/assets/images/icon-js.svg"
+              alt="HTML icon"
+            />
+            <span class="subject__des | font-heading__S clr-neutral-800"
+              >JavaScript</span
+            >
+          </div>
+          <div class="subject | flex-group flex-center" id="Accessibility">
+            <img
+              class="subject__icon | bg-primary-800"
+              src="/assets/images/icon-accessibility.svg"
+              alt="HTML icon"
+            />
+            <span class="subject__des | font-heading__S clr-neutral-800"
+              >Accessibility</span
+            >
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <script type="module" src="/main.js"></script>
-</body>
-
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
